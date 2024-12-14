@@ -1,102 +1,125 @@
-
 .pricingContainer {
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 40px;
     flex-wrap: wrap;
-  }
-  
-  
-  .priceCard {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.priceCard {
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 250px;
-    text-align: center;
+    width: 280px; /* Slightly increased width */
+    text-align: left; /* Align points and text to the left */
     border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .priceCard:hover {
-    transform: translateY(-10px);
-  }
-  
-  .priceCard h1 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.priceCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.priceCard h1 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .priceCard p {
+    text-align: center; /* Keep the title centered */
+}
+
+.priceCard p {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
-  }
-  
+    text-align: center; /* Keep the description centered */
+}
 
-  .priceCard ul {
+.priceCard ul {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .priceCard ul li {
+    margin: 0 auto 20px auto;
+    width: fit-content; /* Align list neatly in the card */
+}
+
+.priceCard ul li {
     font-size: 1rem;
     color: #555;
     margin: 10px 0;
-  }
-  
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-  .price {
-    font-size: 1.5rem;
+.priceCard ul li:before {
+    content: "✔";
+    color: #ff9800;
+    font-size: 1.2rem;
+}
+
+.price {
+    font-size: 1.8rem; /* Slightly increased font size */
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
-  }
-  
+    text-align: center;
+}
 
-  .ctaButton {
+.ctaButton {
     background-color: #f05454;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .ctaButton:hover {
-    background-color: #d94343;
-  }
-  
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-  .proCard {
+.ctaButton:hover {
+    background-color: #d94343;
+    transform: scale(1.1);
+}
+
+.proCard {
     background-color: #e0f7fa;
     border-left: 5px solid #00acc1;
-  }
-  
-  .eliteCard {
+    animation: slideIn 1s ease-in-out;
+}
+
+.eliteCard {
     background-color: #f1f8e9;
     border-left: 5px solid #8bc34a;
-  }
-  
+    animation: slideIn 1.2s ease-in-out;
+}
 
-  .homePassCard {
+.homePassCard {
     background-color: #fff3e0;
     border-left: 5px solid #ff9800;
-  }
-  
-  .priceCard ul li {
-    font-size: 1rem;
-    color: #555;
-    margin: 10px 0;
-  }
-  
-  .priceCard ul li:before {
-    content: "✔";
-    color: #ff9800;
-    margin-right: 10px;
-  }
-  
+    animation: slideIn 1.4s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

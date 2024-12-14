@@ -1,5 +1,10 @@
 import './index.css';
 
+import trainer1 from '../../imageFolder/trainer1.jpg'
+import trainer2 from '../../imageFolder/trainer2.jpg'
+import trainer3 from '../../imageFolder/trainer3.jpg'
+import MaleClient from '../../imageFolder/MaleClient.jpeg'
+import FemaleClient from '../../imageFolder/FemaleClient.jpeg'
 const AboutUs = () => (
     <section id='about-us'>
         <div className='aboutUsPage'>
@@ -44,17 +49,17 @@ const AboutUs = () => (
       <p>Our team consists of passionate, experienced professionals who are dedicated to helping you succeed. Meet the experts who will guide you on your fitness journey:</p>
       <div className='team'>
         <div className='teamMember'>
-          <img src='team1.jpg' alt='Trainer 1'/>
+          <img src={trainer1} alt='Trainer 1'/>
           <h3>John Doe</h3>
           <p>Certified Personal Trainer</p>
         </div>
         <div className='teamMember'>
-          <img src='team2.jpg' alt='Trainer 2'/>
+          <img src={trainer2} alt='Trainer 2'/>
           <h3>Jane Smith</h3>
           <p>Yoga Instructor</p>
         </div>
         <div className='teamMember'>
-          <img src='team3.jpg' alt='Trainer 3'/>
+          <img src={trainer3} alt='Trainer 3'/>
           <h3>Mark Davis</h3>
           <p>Nutrition Specialist</p>
         </div>
@@ -67,11 +72,11 @@ const AboutUs = () => (
       <p>Our members' success is our success. Here are just a few of the inspiring stories that highlight the power of fitness:</p>
       <div className='successStories'>
         <div className='story'>
-          <img src='before-after1.jpg' alt='Success Story 1'/>
+          <img src={FemaleClient} alt='Success Story 1'/>
           <p>"I lost 20 lbs and gained a newfound confidence!" - Lisa</p>
         </div>
         <div className='story'>
-          <img src='before-after2.jpg' alt='Success Story 2'/>
+          <img src={MaleClient} alt='Success Story 2'/>
           <p>"Training at Gym Fluencer helped me build strength and improve my mental well-being." - Tom</p>
         </div>
       </div>

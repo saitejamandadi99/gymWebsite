@@ -2,79 +2,210 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
-  }
-  
-  .section {
+    animation: fadeInPage 1.5s ease-in-out; /* Page-wide fade-in */
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section {
     margin-bottom: 40px;
-  }
-  
-  h2 {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Slide up effect */
+    animation: fadeInSection 1s ease-in-out forwards; /* Trigger animation */
+}
+
+.section:nth-child(odd) {
+    animation-delay: 0.3s; /* Staggered effect */
+}
+
+.section:nth-child(even) {
+    animation-delay: 0.6s; /* Staggered effect */
+}
+
+@keyframes fadeInSection {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading Animation */
+h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: white;
-  }
-  
-  p {
+    position: relative;
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Paragraph Animation */
+p {
     font-size: 1rem;
     color: white;
     line-height: 1.5;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
+    animation: fadeInText 1s ease-in-out;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* List Animation */
+ul li {
     font-size: 1.1rem;
     margin: 10px 0;
     color: white;
-  }
-  
-  .team {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInList 0.8s ease-in-out forwards;
+}
+
+ul li:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+ul li:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInList {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Team Member Hover Effect */
+.team {
     display: flex;
     gap: 20px;
-  }
-  
-  .teamMember {
+}
+
+.teamMember {
     text-align: center;
-  }
-  
-  .teamMember img {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.teamMember:hover {
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.teamMember img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-  }
-  
-  .successStories {
+    animation: zoomInImage 1.5s ease-in-out;
+}
+
+@keyframes zoomInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Success Stories */
+.successStories {
     display: flex;
     gap: 20px;
-  }
-  
-  .story {
+    opacity: 0;
+    animation: fadeInSuccessStories 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInSuccessStories {
+    to {
+        opacity: 1;
+    }
+}
+
+.story {
     width: 45%;
     text-align: center;
-  }
-  
-  .story img {
+    transform: translateY(20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.story:hover {
+    transform: translateY(0) scale(1.05); /* Lift and zoom on hover */
+}
+
+.story img {
     width: 100%;
     border-radius: 8px;
-  }
-  
-  .story p {
+    animation: fadeInImage 1s ease-in-out;
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.story p {
     margin-top: 10px;
     font-style: italic;
-  }
-  
-  @media (max-width: 768px) {
+    animation: fadeInStoryText 1.2s ease-in-out;
+}
+
+@keyframes fadeInStoryText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
     .team {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     .successStories {
-      flex-direction: column;
+        flex-direction: column;
     }
-  }
-  
+
+    .story {
+        width: 100%;
+    }
+}
