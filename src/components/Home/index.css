@@ -1,0 +1,60 @@
+.homeContainer{
+    height: auto;
+    min-height:100vh;
+    width:100vw;
+    background-color: black;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: url('../../imageFolder/gymBackground.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 0 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-section h1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: lighter;
+    max-width: 600px;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e94f42;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+}
