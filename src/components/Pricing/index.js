@@ -1,7 +1,7 @@
 import './index.css';
 
 const Pricing = () => (
-  <div className="pricingContainer">
+    <section id ='pricing'><div className="pricingContainer">
     {/* Pro Card */}
     <div className="priceCard proCard">
       <h1>Pro</h1>
@@ -54,7 +54,8 @@ const Pricing = () => (
       <div className="price">$49/month</div>
       <button className="ctaButton">Get Started</button>
     </div>
-  </div>
+  </div></section>
+  
 );
 
 export default Pricing;

@@ -1,7 +1,8 @@
 import './index.css';
 
 const AboutUs = () => (
-  <div className='aboutUsPage'>
+    <section id='about-us'>
+        <div className='aboutUsPage'>
     
     <section className='section'>
       <h2>Welcome to Gym Fluencer</h2>
@@ -94,6 +95,8 @@ const AboutUs = () => (
       <p>At [Gym Name], we celebrate achievements big and small, and we encourage members to inspire each other every day. Join us and be part of a fitness culture that’s more than just about physical strength – it's about mental resilience, support, and growth.</p>
     </section>
   </div>
+    </section>
+  
 );
 
 export default AboutUs;

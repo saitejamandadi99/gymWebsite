@@ -6,7 +6,7 @@ import AboutUs from '../AboutUs'
 import './index.css'
 
 const Home = () =>(
-    <>
+    <section id = 'home'>
     <Header />
     <div className='homeContainer'>
         <div class="hero-section">
@@ -19,7 +19,8 @@ const Home = () =>(
     <AboutUs />
     </div>
     <Footer />
-    </>
+    </section>
+    
 )
 
 export default Home

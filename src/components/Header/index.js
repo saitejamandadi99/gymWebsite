@@ -1,17 +1,12 @@
-import './index.css';  
-import logoImage from '../../imageFolder/logoImage.jpeg'; 
+import './index.css';
+
 const Header = () => (
     <nav className='NavBarContainer'>
-        <div className='logoImageContainer'>
-            <img src={logoImage} alt="logoImg" className='logoImage' /> 
-            <p className='logoHeading'>Gym Fluencer</p>
-        </div>
-        
         <ul className='navbarLink'>
-            <li className='listEle'>Home</li>
-            <li className='listEle'>Workout</li>
-            <li className='listEle'>Pricing</li>
-            <li className='listEle'>About Us</li>
+            <li><a href="#home" className="navLink">Home</a></li>
+            <li><a href="#workout" className="navLink">Workout Plans</a></li>
+            <li><a href="#pricing" className="navLink">Pricing</a></li>
+            <li><a href="#about-us" className="navLink">About Us</a></li>
         </ul>
     </nav>
 );
