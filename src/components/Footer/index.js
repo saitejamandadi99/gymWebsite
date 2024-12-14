@@ -12,10 +12,9 @@ const Footer = () =>(
             <FaInstagram size='30' className="socialMediaLogo" />
             <FaYoutube size='30' className="socialMediaLogo" />
 
-
-
         </div>
         <p>Gym Fluencer @ all the rights are acquired by gym Fluencer</p>
+        <p>Empowering you to reach your fitness goals with expert training and motivation.</p>
     </div>
 )
 

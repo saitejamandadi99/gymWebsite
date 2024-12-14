@@ -10,10 +10,8 @@ const Header = () => (
         <ul className='navbarLink'>
             <li className='listEle'>Home</li>
             <li className='listEle'>Workout</li>
-            <li className='listEle'>Diet</li>
             <li className='listEle'>Pricing</li>
-            <li className='listEle'>Contact Us</li>
-            <li className='listEle'>About</li>
+            <li className='listEle'>About Us</li>
         </ul>
     </nav>
 );

@@ -15,4 +15,6 @@
     margin: 10px;
     cursor: pointer;
 }
-
+.socialMediaLogo:hover {
+    transform: translateY(-10px); 
+  }

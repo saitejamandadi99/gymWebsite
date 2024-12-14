@@ -1,6 +1,8 @@
 import Header from '../Header'
 import Footer from '../Footer'
 import Workout from '../Workout'
+import Pricing from '../Pricing'
+import AboutUs from '../AboutUs'
 import './index.css'
 
 const Home = () =>(
@@ -13,6 +15,8 @@ const Home = () =>(
             <button type="button" class="cta-button">Get Started Now</button>
         </div>
     <Workout />
+    <Pricing />
+    <AboutUs />
     </div>
     <Footer />
     </>
