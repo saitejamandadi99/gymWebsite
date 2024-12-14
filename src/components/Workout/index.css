@@ -22,7 +22,7 @@
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    width: 350px; /* Increased size */
+    width: 350px;
     overflow: hidden;
     text-align: center;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
@@ -35,7 +35,7 @@
 
 .workout-image {
     width: 100%;
-    height: 250px; /* Increased height */
+    height: 250px; 
     object-fit: cover;
     border-bottom: 3px solid #ddd; 
     animation: zoomIn 1.2s ease;
@@ -51,15 +51,15 @@
 }
 
 .workout-card h3 {
-    font-size: 2rem; /* Larger font size */
+    font-size: 2rem; 
     color: #222;
     margin-top: 20px;
 }
 
 .workout-card p {
-    font-size: 1.2rem; /* Larger font size */
+    font-size: 1.2rem; 
     color: #555;
     padding: 0 20px;
     margin-bottom: 25px;
-    line-height: 1.5; /* Better readability */
+    line-height: 1.5;
 }

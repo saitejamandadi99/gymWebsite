@@ -22,8 +22,8 @@
     background-color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 280px; /* Slightly increased width */
-    text-align: left; /* Align points and text to the left */
+    width: 280px; 
+    text-align: left; 
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
@@ -39,21 +39,21 @@
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
-    text-align: center; /* Keep the title centered */
+    text-align: center;
 }
 
 .priceCard p {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
-    text-align: center; /* Keep the description centered */
+    text-align: center; 
 }
 
 .priceCard ul {
     list-style-type: none;
     padding: 0;
     margin: 0 auto 20px auto;
-    width: fit-content; /* Align list neatly in the card */
+    width: fit-content;
 }
 
 .priceCard ul li {
@@ -72,7 +72,7 @@
 }
 
 .price {
-    font-size: 1.8rem; /* Slightly increased font size */
+    font-size: 1.8rem; 
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
